@@ -1,0 +1,128 @@
+.hero {
+  margin-top: -40px;
+  height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    background-image: url("/public/images/bg.jpg");
+    color: white;
+    position: relative;
+  }
+  
+  .heroContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 500px;
+    position: absolute;
+    left: 10%;
+    z-index: 2;
+  }
+  
+  .heroTitle {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif  ;
+    margin-bottom: 2rem;
+  }
+  
+  .heroButton {
+    background-color: #EF3044;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .heroButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .heroImage {
+    position: absolute;
+    right: -8%;
+    bottom: 0;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+  }
+  
+  .heroImage img {
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 1200px) {
+    .heroContent {
+    max-width: 80%;
+    left: 5%;
+    }
+    
+    .heroImage {
+    width: 40%;
+    right: -5%;
+    }
+    }
+    
+    @media (max-width: 768px) {
+    .heroContent {
+    max-width: 90%;
+    left: 5%;
+    }
+    
+    .heroTitle {
+    font-size: 2.5rem;
+    }
+    
+    .heroSubtitle {
+    font-size: 1.5rem;
+    }
+    
+    .heroButton {
+    font-size: 1rem;
+    padding: 0.4rem 1.2rem;
+    }
+    
+    .heroImage {
+    width: 50%;
+    right: -15%;
+    }
+    }
+    
+    @media (max-width: 576px) {
+    .heroContent {
+    max-width: 100%;
+    padding: 20px;
+    left: 0;
+    }
+    
+    .heroTitle {
+    font-size: 3.5rem;
+    }
+    
+    .heroSubtitle {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    }
+    
+    .heroButton {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    }
+    
+    .heroImage {
+      width: 50%;
+      right: -15%;
+    }
+    }
